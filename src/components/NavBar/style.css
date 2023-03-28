@@ -1,0 +1,33 @@
+.hamburger-open{
+    animation : open 0.2s ease  alternate;
+    margin-right: 0px;
+}
+
+.hamburger-close{
+    transform: translateX(200%);
+    margin-right: 0px;
+    animation: close 0.2s ease alternate;
+}
+
+
+
+@keyframes open {
+    0%{
+        transform: translateX(300%);
+    }
+
+    100%{
+        transform: translateX(0%);
+    }
+}
+
+
+@keyframes close {
+    0%{
+        transform: translateX(0%);
+    }
+
+    100%{
+        transform: translateX(200%);
+    }
+}
