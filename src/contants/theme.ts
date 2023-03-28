@@ -1,0 +1,21 @@
+export const theme = {
+  BASE_WHITE_COLOR: "#DEDEDE",
+  BASE_GRAY_COLOR: "#959595",
+  PAGE_BACKGROUND_COLOR: "#202020",
+  NAV_BAR: {
+    BACKGROUND_COLOR: "rgba(50, 50, 50, 0.7)",
+    TEXT_SIZE: "18px",
+    TEXT_COLOR: "#DEDEDE",
+    LOGO_SIZE: "",
+  },
+  ABOUT_ME: {
+    TEXT_COLOR: "#DEDEDE",
+    DESCRIPTION_TEXT_COLOR: "#959595",
+    EMAIL_BACKGROUND_COLOR: "#9D9D9D",
+    EMAIL_TEXT_COLOR: "#FFFFFF",
+  },
+
+  FOOTER :{
+    TEXT_COLOR: "#959595",
+  }
+};
