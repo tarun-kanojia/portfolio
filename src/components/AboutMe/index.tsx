@@ -11,7 +11,7 @@ import {
 
 export default function AboutMe() {
   return (
-    <AboutMeContainer>
+    <AboutMeContainer id="about-me">
       <AboutMeContent>
         <IntroContainer>
           Hi,I am Tarun <br />A Frontend Developer

@@ -35,7 +35,7 @@ export default function Skills() {
   };
   return (
     <>
-      <Title>Skills</Title>
+      <Title id="skills">Skills</Title>
       <SkillsWrapper>{renderSkillItems()}</SkillsWrapper>
     </>
   );

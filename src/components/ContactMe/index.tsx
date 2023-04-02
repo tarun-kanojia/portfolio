@@ -8,7 +8,7 @@ import {
 
 export default function ContactMe() {
   return (
-    <ContactMeContainer>
+    <ContactMeContainer id="contact">
       <Title>Contact Me</Title>
       <Description>
         If you are looking to hire a frontend developer,
