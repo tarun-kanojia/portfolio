@@ -31,6 +31,7 @@ export const HamburgerContainer = styled.div`
   gap: 4px;
   height: 16px;
   margin-right: 24px;
+  cursor: pointer;
 `;
 
 interface HambugerProps {

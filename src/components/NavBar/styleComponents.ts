@@ -34,6 +34,7 @@ export const NavContents = styled.div<NavContentProps>`
     justify-content: center;
     align-items: center;
     height: 100vh;
+    width: 100%;
     gap: 50px;
     background-color: ${(props) =>
       props.theme.NAV_BAR.BACKGROUND_COLOR};
