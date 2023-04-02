@@ -1,12 +1,12 @@
 import { FiMail } from "react-icons/fi";
 import styled from "styled-components";
 
-
 export const EmailContainer = styled.button`
   border: none;
   width: 400px;
   height: 64px;
   gap: 10px;
+  cursor: pointer;
   border-radius: 4px;
   display: flex;
   justify-content: center;

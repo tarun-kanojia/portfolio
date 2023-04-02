@@ -1,8 +1,13 @@
 import React from "react";
 import { ImLinkedin, ImTwitter } from "react-icons/im";
 import {
+  navigateToGitHub,
+  navigateToLinkindin,
+} from "../../common/Util/NavigationUtils";
+import {
   CopywriteText,
   FooterWrapper,
+  GitHub,
   LinkdIn,
   SocialsContainer,
   Twitter,
@@ -15,8 +20,9 @@ export default function Footer() {
         Made by Tarun — Copyright 2023
       </CopywriteText>
       <SocialsContainer>
-        <LinkdIn />
-        <Twitter />
+        <LinkdIn onClick={navigateToLinkindin} />
+        <Twitter onClick={() => {}} />
+        <GitHub onClick={navigateToGitHub} />
       </SocialsContainer>
     </FooterWrapper>
   );
