@@ -1,6 +1,8 @@
 import styled from "styled-components";
 import { FiMail } from "react-icons/fi";
 import { mobile } from "../../common/constants/UI/styleConstant";
+import ProfileImage from "../../assets/images/tarun_avatar.png";
+
 export const AboutMeContainer = styled.section`
   display: flex;
   justify-content: center;
@@ -23,6 +25,7 @@ export const AboutMeContent = styled.div`
   align-items: start;
   justify-content: start;
   gap: 24px;
+
   color: ${(props) => props.theme.ABOUT_ME.TEXT_COLOR};
   ${mobile} {
     width: 80%;
@@ -32,6 +35,7 @@ export const AboutMeContent = styled.div`
 `;
 
 export const ImageWrapper = styled.div`
+  padding: 10px;
   max-width: 50%;
   width: 400px;
   height: 400px;
@@ -46,6 +50,7 @@ export const ImageWrapper = styled.div`
 `;
 
 export const Avatar = styled.img`
+  border-radius: 400px;
   width: 100%;
   height: 100%;
 `;
@@ -70,4 +75,3 @@ export const DescriptionContainer = styled.div`
     width: 100%;
   }
 `;
-

@@ -1,5 +1,5 @@
-import React from "react";
 import EmailButton from "../../common/components/EmailButton";
+import ProfileImage from "../../assets/images/tarun_avatar.png";
 import {
   AboutMeContainer,
   AboutMeContent,
@@ -26,10 +26,7 @@ export default function AboutMe() {
         <EmailButton email="tarunkanojiawork@gmail.com" />
       </AboutMeContent>
       <ImageWrapper>
-        <Avatar
-          src="/media/iitachii/TARUN/CODES/Projects/portfolio/src/assets/images/kobe.jpeg"
-          alt="avatar"
-        />
+        <Avatar src={ProfileImage} alt="avatar" />
       </ImageWrapper>
     </AboutMeContainer>
   );
