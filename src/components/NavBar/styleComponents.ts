@@ -8,6 +8,8 @@ export const NavBarWrapper = styled.section`
   background-color: ${(props) =>
     props.theme.NAV_BAR.BACKGROUND_COLOR};
   height: 80px;
+  position: sticky;
+  top: 0;
 `;
 
 export const Logo = styled(BiCoffeeTogo)`
@@ -25,7 +27,7 @@ interface NavContentProps {
 export const NavContents = styled.div<NavContentProps>`
   display: flex;
   justify-content: space-between;
-  width: 280px;
+  width: 500px;
   margin-right: 109px;
 
   @media screen and (max-width: 1024px) {

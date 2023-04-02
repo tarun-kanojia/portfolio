@@ -16,7 +16,7 @@ function App() {
     <ThemeProvider theme={theme}>
       <PageWrapper>
         <NavBar />
-        <Container>
+        <Container id="home">
           <AboutMe />
           <Skills />
           <Projects />

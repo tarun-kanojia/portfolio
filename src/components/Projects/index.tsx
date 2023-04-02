@@ -32,7 +32,7 @@ export default function Projects() {
     ));
   };
   return (
-    <ProjectsWrapper>
+    <ProjectsWrapper id="projects">
       <Title>Projects</Title>
       <ProjectContainer>
         {renderProjectItem()}

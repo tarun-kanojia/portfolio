@@ -19,3 +19,30 @@ export function navigateToLinkindin() {
 export function navigateToMailMe() {
   navigateTo(EMAIL_URL);
 }
+
+export const navigateToSectionWithId = (id: string) => {
+  document.getElementById(id)?.scrollIntoView({
+    behavior: "smooth",
+    block: "start",
+  });
+};
+
+export const navigateToHomeSection = () => {
+  navigateToSectionWithId("home");
+};
+
+export const navigateToAboutMeSection = () => {
+  navigateToSectionWithId("about-me");
+};
+
+export const navigateToContactSection = () => {
+  navigateToSectionWithId("contact");
+};
+
+export const navigateToProjectsSection = () => {
+  navigateToSectionWithId("projects");
+};
+
+export const navigateToSkillsSection = () => {
+  navigateToSectionWithId("skills");
+};

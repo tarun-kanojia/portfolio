@@ -8,6 +8,13 @@ import {
   NavContents,
   NavItem,
 } from "./styleComponents";
+import {
+  navigateToAboutMeSection,
+  navigateToContactSection,
+  navigateToHomeSection,
+  navigateToProjectsSection,
+  navigateToSkillsSection,
+} from "../../common/Util/NavigationUtils";
 
 export default function NavBar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -17,9 +24,23 @@ export default function NavBar() {
   const renderDesktopView = () => {
     return (
       <NavContents>
-        <NavItem>Home</NavItem>
-        <NavItem>Contact</NavItem>
-        <NavItem>Work</NavItem>
+        <NavItem onClick={navigateToHomeSection}>
+          Home
+        </NavItem>
+        <NavItem onClick={navigateToAboutMeSection}>
+          AboutMe
+        </NavItem>
+        <NavItem onClick={navigateToProjectsSection}>
+          Work
+        </NavItem>
+
+        <NavItem onClick={navigateToSkillsSection}>
+          Skills
+        </NavItem>
+
+        <NavItem onClick={navigateToContactSection}>
+          Contact
+        </NavItem>
       </NavContents>
     );
   };
@@ -38,9 +59,22 @@ export default function NavBar() {
               : "hamburger-close"
           }
         >
-          <NavItem>Home</NavItem>
-          <NavItem>Contact</NavItem>
-          <NavItem>Work</NavItem>
+          {" "}
+          <NavItem onClick={navigateToHomeSection}>
+            Home
+          </NavItem>
+          <NavItem onClick={navigateToAboutMeSection}>
+            AboutMe
+          </NavItem>
+          <NavItem onClick={navigateToProjectsSection}>
+            Work
+          </NavItem>
+          <NavItem onClick={navigateToSkillsSection}>
+            Skills
+          </NavItem>
+          <NavItem onClick={navigateToContactSection}>
+            Contact
+          </NavItem>
         </NavContents>
       </>
     );
