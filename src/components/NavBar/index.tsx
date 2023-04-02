@@ -31,6 +31,17 @@ export default function NavBar() {
           isOpen={isMenuOpen}
           toggleMenuStatus={toggleMenuStatus}
         />
+        <NavContents
+          className={
+            isMenuOpen
+              ? "hamburger-open"
+              : "hamburger-close"
+          }
+        >
+          <NavItem>Home</NavItem>
+          <NavItem>Contact</NavItem>
+          <NavItem>Work</NavItem>
+        </NavContents>
       </>
     );
   };

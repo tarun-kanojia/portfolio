@@ -1,4 +1,3 @@
-import { prependOnceListener } from "process";
 import { BiCoffeeTogo } from "react-icons/bi";
 import styled, { keyframes } from "styled-components";
 
@@ -56,6 +55,7 @@ export const NavItem = styled.div`
     :hover {
       font-size: 30px;
       transition: font-size 0.1s ease;
+      letter-spacing: 5px;
     }
   }
 `;
