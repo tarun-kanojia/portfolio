@@ -42,6 +42,7 @@ export const NavContents = styled.div<NavContentProps>`
     top: 80px;
     right: 0px;
     margin-right: 0px;
+    z-index: 5;
   }
 `;
 

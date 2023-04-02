@@ -1,4 +1,5 @@
 import React from "react";
+import { navigateToMailMe } from "../../Util/NavigationUtils";
 import {
   Email,
   EmailContainer,
@@ -9,7 +10,7 @@ interface Props {
 }
 export default function EmailButton({ email }: Props) {
   return (
-    <EmailContainer>
+    <EmailContainer onClick={navigateToMailMe}>
       <EmailLogo />
       <Email>{email}</Email>
     </EmailContainer>

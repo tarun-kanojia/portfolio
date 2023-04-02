@@ -1,4 +1,8 @@
-import { ImLinkedin, ImTwitter } from "react-icons/im";
+import {
+  ImGithub,
+  ImLinkedin,
+  ImTwitter,
+} from "react-icons/im";
 import styled from "styled-components";
 
 export const FooterWrapper = styled.section`
@@ -21,12 +25,23 @@ export const SocialsContainer = styled.section`
 `;
 
 export const LinkdIn = styled(ImLinkedin)`
+  cursor: pointer;
   width: 22px;
   height: 22px;
   color: ${(props) => props.theme.FOOTER.TEXT_COLOR};
 `;
 
 export const Twitter = styled(ImTwitter)`
+  cursor: pointer;
+
+  width: 22px;
+  height: 22px;
+  color: ${(props) => props.theme.FOOTER.TEXT_COLOR};
+`;
+
+export const GitHub = styled(ImGithub)`
+  cursor: pointer;
+
   width: 22px;
   height: 22px;
   color: ${(props) => props.theme.FOOTER.TEXT_COLOR};

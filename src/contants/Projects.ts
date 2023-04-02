@@ -1,14 +1,14 @@
 export const PROJECTS = [
   {
     name: "AlgoExtension",
-    description: "Extension to generate Algo extensions",
+    description:
+      "Chrome extension for coders to find contest details on different platforms and can find alogrithms",
+    url: "https://chrome.google.com/webstore/detail/algo-extension/cmkiidpogbdgkihmcddabkadkakpapme?hl=en",
   },
   {
-    name: "AlgoExtension",
-    description: "Extension to generate Algo extensions",
-  },
-  {
-    name: "AlgoExtension",
-    description: "Extension to generate Algo extensions",
+    name: "Cipher Mail-Bot",
+    description:
+      "Mail bot for sheduling mails with recurring mail scheduling feature",
+    url: "https://github.com/tarun-kanojia",
   },
 ];

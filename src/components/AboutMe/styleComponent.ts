@@ -39,6 +39,7 @@ export const ImageWrapper = styled.div`
   background-color: ${(props) =>
     props.theme.ABOUT_ME.TEXT_COLOR};
   ${mobile} {
+    max-width: 100%;
     width: 240px;
     height: 240px;
   }
@@ -69,3 +70,4 @@ export const DescriptionContainer = styled.div`
     width: 100%;
   }
 `;
+

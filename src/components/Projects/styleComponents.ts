@@ -16,7 +16,6 @@ export const Title = styled.div`
   color: ${(props) => props.theme.BASE_GRAY_COLOR};
 `;
 export const ProjectContainer = styled.section`
-  position: relative;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -35,15 +34,18 @@ export const ProjectTitle = styled.div`
 
 export const ProjectDetails = styled.div`
   display: none;
+  text-align: center;
+  z-index: 3;
   flex-direction: column;
   gap: 24px;
   position: absolute;
   background: rgba(0, 0, 0, 0.6);
-  width: inherit;
-  height: inherit;
+  width: calc(100% - 20px);
+  height: calc(100% - 20px);
+  padding: 10px;
   align-items: center;
-  justify-content: center;
-  font-size: 40px;
+  justify-content: space-evenly;
+  font-size: 30px;
   font-weight: 700;
   text-transform: capitalize;
   text-align: center;
@@ -53,10 +55,30 @@ export const ProjectDetails = styled.div`
 export const ProjectItem = styled.div`
   width: 400px;
   height: 560px;
+  position: relative;
   border-radius: 4px;
   background-color: ${(props) =>
     props.theme.BASE_WHITE_COLOR};
   :hover ${ProjectDetails} {
     display: flex;
   }
+`;
+
+export const ExploreProject = styled.button`
+  /* text-decoration: none; */
+  border: 1px solid
+    ${(props) => props.theme.BASE_WHITE_COLOR};
+  color: ${(props) => props.theme.BASE_WHITE_COLOR};
+  cursor:pointer;
+  width: 160px;
+  height: 50px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  text-transform: uppercase;
+  border-radius: 4px;
+  font-size: 20px;
+  bottom: 55px;
+  position: absolute;
 `;
